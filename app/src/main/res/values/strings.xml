@@ -2,4 +2,6 @@
     <string name="app_name">ModernLogin</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
+    <string name="action_search">Search</string>
+    <string name="action_cart">Cart</string>
 </resources>
