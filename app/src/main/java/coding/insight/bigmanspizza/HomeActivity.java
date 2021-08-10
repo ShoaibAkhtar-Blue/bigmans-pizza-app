@@ -1,4 +1,4 @@
-package coding.insight.cleanuiloginregister;
+package coding.insight.bigmanspizza;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +19,11 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        // Remove title
+        setTitle("");
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Initialize views
         initViews();

@@ -1,4 +1,4 @@
-package coding.insight.cleanuiloginregister;
+package coding.insight.bigmanspizza;
 
 import android.content.Intent;
 import android.os.Build;
@@ -28,7 +28,8 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                //Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                Intent intent = new Intent(LoginActivity.this, NewHomeActivity.class);
                 startActivity(intent);
             }
         });

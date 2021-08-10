@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item android:id="@+id/action_home"
+            android:title="@string/action_home" />
+        <item android:id="@+id/action_my_orders"
+            android:title="@string/action_my_orders" />
+        <item android:id="@+id/action_profile"
+            android:title="@string/action_profile" />
+        <item android:id="@+id/action_contact_us"
+            android:title="@string/action_contact_us" />
+        <item android:id="@+id/action_share_app"
+            android:title="@string/action_share_app" />
+    </group>
+    <group android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item android:id="@+id/social_media"
+            android:title="@string/social_media">
+            <menu>
+                <item android:id="@+id/action_facebook"
+                    android:title="@string/action_facebook" />
+                <item android:id="@+id/action_instagram"
+                    android:title="@string/action_instagram" />
+            </menu>
+        </item>
+        <item android:title="@string/delivery_time" />
+        <item android:title="@string/delivery_charges" />
+        <item android:title="@string/delivery_hours" />
+    </group>
+
+</menu>

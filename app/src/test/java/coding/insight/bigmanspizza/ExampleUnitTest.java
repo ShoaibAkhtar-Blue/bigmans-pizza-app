@@ -1,4 +1,4 @@
-package coding.insight.cleanuiloginregister;
+package coding.insight.bigmanspizza;
 
 import org.junit.Test;
 
