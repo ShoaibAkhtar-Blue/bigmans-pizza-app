@@ -40,7 +40,7 @@ public class NewHomeActivity extends AppCompatActivity {
         sliderImages.add(new SlideModel(R.drawable.slider_image1, null));
         sliderImages.add(new SlideModel(R.drawable.slider_image2, null));
         sliderImages.add(new SlideModel(R.drawable.slider_image3, null));
-        imageSliderHomeActivity.setImageList(sliderImages, true); // Second parameter is for center crop
+        imageSliderHomeActivity.setImageList(sliderImages, false); // Second parameter is for center crop
 
         // Setup navigation drawer
         DrawerLayout drawerLayout = findViewById(R.id.layout_drawer);
