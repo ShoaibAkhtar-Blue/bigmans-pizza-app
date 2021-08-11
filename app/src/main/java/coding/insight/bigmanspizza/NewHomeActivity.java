@@ -50,34 +50,31 @@ public class NewHomeActivity extends AppCompatActivity {
 
         // Enable navigation drawer items
         NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.action_home:
-                        Toast.makeText(NewHomeActivity.this, "Home is clicked", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.action_my_orders:
-                        Toast.makeText(NewHomeActivity.this, "My Orders is clicked", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.action_profile:
-                        Toast.makeText(NewHomeActivity.this, "Profile is clicked", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.action_contact_us:
-                        Toast.makeText(NewHomeActivity.this, "Contact Us is clicked", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.action_share_app:
-                        Toast.makeText(NewHomeActivity.this, "Share App is clicked", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.action_facebook:
-                        Toast.makeText(NewHomeActivity.this, "Facebook is clicked", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.action_instagram:
-                        Toast.makeText(NewHomeActivity.this, "Instagram is clicked", Toast.LENGTH_SHORT).show();
-                        return true;
-                    default:
-                        return false;
-                }
+        navigationView.setNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.action_home:
+                    Toast.makeText(NewHomeActivity.this, "Home is clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                case R.id.action_my_orders:
+                    Toast.makeText(NewHomeActivity.this, "My Orders is clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                case R.id.action_profile:
+                    Toast.makeText(NewHomeActivity.this, "Profile is clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                case R.id.action_contact_us:
+                    Toast.makeText(NewHomeActivity.this, "Contact Us is clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                case R.id.action_share_app:
+                    Toast.makeText(NewHomeActivity.this, "Share App is clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                case R.id.action_facebook:
+                    Toast.makeText(NewHomeActivity.this, "Facebook is clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                case R.id.action_instagram:
+                    Toast.makeText(NewHomeActivity.this, "Instagram is clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                default:
+                    return false;
             }
         });
 
