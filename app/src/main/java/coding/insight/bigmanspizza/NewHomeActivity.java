@@ -3,12 +3,15 @@ package coding.insight.bigmanspizza;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.denzcoskun.imageslider.ImageSlider;
@@ -21,6 +24,9 @@ import java.util.List;
 public class NewHomeActivity extends AppCompatActivity {
     private ImageSlider imageSliderHomeActivity;
     private ActionBarDrawerToggle toggle;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private CardView bakeryCardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +49,11 @@ public class NewHomeActivity extends AppCompatActivity {
         imageSliderHomeActivity.setImageList(sliderImages, false); // Second parameter is for center crop
 
         // Setup navigation drawer
-        DrawerLayout drawerLayout = findViewById(R.id.layout_drawer);
         toggle = new ActionBarDrawerToggle(this, drawerLayout,R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
         // Enable navigation drawer items
-        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.action_home:
@@ -78,6 +82,15 @@ public class NewHomeActivity extends AppCompatActivity {
             }
         });
 
+        // Set onClickListener on bakery CardView to navigate the user to Bakery Activity
+        bakeryCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NewHomeActivity.this, BakeryActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     /**
@@ -97,6 +110,9 @@ public class NewHomeActivity extends AppCompatActivity {
      */
     private void initViews() {
         imageSliderHomeActivity = findViewById(R.id.image_slider_home_activity);
+        drawerLayout = findViewById(R.id.layout_drawer);
+        navigationView = findViewById(R.id.nav_view);
+        bakeryCardView = findViewById(R.id.cardView_bakery);
     }
 
     /**

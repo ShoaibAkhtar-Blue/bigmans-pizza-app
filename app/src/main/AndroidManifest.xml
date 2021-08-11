@@ -10,9 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".BakeryActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.New"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".NewHomeActivity"
             android:exported="true"
-            android:theme="@style/AppTheme.New"/>
+            android:theme="@style/AppTheme.New"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".HomeActivity"
             android:exported="true"
@@ -30,12 +36,12 @@
             android:name=".RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
-    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
 
 </manifest>

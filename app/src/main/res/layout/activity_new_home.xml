@@ -38,12 +38,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/image_slider_home_activity">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_bakery"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="7dp"
                     android:layout_weight="1"
                     android:elevation="15dp"
-                    app:cardCornerRadius="7dp">
+                    app:cardCornerRadius="17dp">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -58,7 +59,7 @@
                     android:layout_margin="7dp"
                     android:layout_weight="1"
                     android:elevation="15dp"
-                    app:cardCornerRadius="7dp">
+                    app:cardCornerRadius="17dp">
 
                     <ImageView
                         android:layout_width="match_parent"
