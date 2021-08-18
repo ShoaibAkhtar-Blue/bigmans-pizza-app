@@ -9,13 +9,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
+
+import coding.insight.bigmanspizza.Model.CakeItem;
 
 public class BakeryItemDetailsRecyclerViewAdapter  extends RecyclerView.Adapter<BakeryItemDetailsRecyclerViewAdapter.ViewHolder> {
     private Context context;
-    private List<String> itemList;
+    private List<CakeItem> itemList;
 
-    public BakeryItemDetailsRecyclerViewAdapter(Context context, List<String> itemList) {
+    public BakeryItemDetailsRecyclerViewAdapter(Context context, List<CakeItem> itemList) {
         this.context = context;
         this.itemList = itemList;
     }
@@ -30,7 +34,8 @@ public class BakeryItemDetailsRecyclerViewAdapter  extends RecyclerView.Adapter<
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.itemNameTextView.setText(itemList.get(position));
+        holder.itemNameTextView.setText(itemList.get(position).getName());
+        holder.itemPriceTextView.setText(itemList.get(position).getPrice());
     }
 
     @Override
@@ -40,10 +45,12 @@ public class BakeryItemDetailsRecyclerViewAdapter  extends RecyclerView.Adapter<
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView itemNameTextView;
+        private TextView itemPriceTextView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             itemNameTextView = itemView.findViewById(R.id.textView_item_name);
+            itemPriceTextView = itemView.findViewById(R.id.textView_item_price);
         }
     }
 }

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "574260322881",
+    "firebase_url": "https://bigmans-pizza-admin-app-6ee42-default-rtdb.firebaseio.com",
+    "project_id": "bigmans-pizza-admin-app-6ee42",
+    "storage_bucket": "bigmans-pizza-admin-app-6ee42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574260322881:android:d4bbfbad5964bf49925cc0",
+        "android_client_info": {
+          "package_name": "blue.project.bigmanspizzaadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574260322881-evo9oi68pmj5dk1nqg3nqrohocr4ua2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBikY3GoexL3-yHwCAPfcg3F8O8s4ip-yE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574260322881-evo9oi68pmj5dk1nqg3nqrohocr4ua2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574260322881:android:e125b131e174cc6f925cc0",
+        "android_client_info": {
+          "package_name": "coding.insight.cleanuiloginregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574260322881-evo9oi68pmj5dk1nqg3nqrohocr4ua2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBikY3GoexL3-yHwCAPfcg3F8O8s4ip-yE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574260322881-evo9oi68pmj5dk1nqg3nqrohocr4ua2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
