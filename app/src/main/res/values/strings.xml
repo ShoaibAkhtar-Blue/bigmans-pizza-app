@@ -18,4 +18,7 @@
     <string name="delivery_charges">Delivery Charges: 50 Rs</string>
     <string name="delivery_hours">Delivery hours: 8am to 10pm</string>
     <string name="banner_text">Free Delivery on Order above: Rs 1000</string>
+    <string name="bakery_item_cake">Cake</string>
+    <string name="bakery_item_mithai">Mithai</string>
+    <string name="bakery_item_baverage">Baverage</string>
 </resources>

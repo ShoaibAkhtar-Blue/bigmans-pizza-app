@@ -31,9 +31,9 @@ public class BakeryActivity extends AppCompatActivity {
 
         // Setup Adapter
         List<String> list = new ArrayList<>();
-        list.add("Cake");
-        list.add("Mithai");
-        list.add("Baverage");
+        list.add(getString(R.string.bakery_item_cake));
+        list.add(getString(R.string.bakery_item_mithai));
+        list.add(getString(R.string.bakery_item_baverage));
         adapter = new BakeryRecyclerViewAdapter(this, list);
 
         // Set adapter to recycler view
